@@ -1,0 +1,5 @@
+{
+  "env_production": {
+    "host1": "https://www.swiatksiazki.pl/"
+  }
+}

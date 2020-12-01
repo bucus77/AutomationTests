@@ -1,0 +1,10 @@
+{
+  "name": "AutomationTests",
+  "version": "1.0.0",
+  "dependencies": {
+    "jasmine-reporters": "^2.3.2",
+    "moment": "^2.29.1",
+    "protractor-beautiful-reporter": "latest",
+    "protractor": "^7.0.0"
+  }
+}
