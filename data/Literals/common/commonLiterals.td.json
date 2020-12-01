@@ -1,0 +1,19 @@
+{
+  "pageTitle": "Księgarnia internetowa swiatksiazki.pl z dostawą 0 zł do Księgarń Świat Książki",
+  "headerLinks": {
+    "wishList": "SCHOWEK",
+    "createAccount": "UTWÓRZ KONTO",
+    "logIn": "ZALOGUJ SIĘ"
+  },
+  "leftNavigation": {
+    "books": "Książki",
+    "foreignBooks": "Książki obcojęzyczne",
+    "textBooks": "Podręczniki",
+    "ebooks": "E-booki",
+    "audioBooks": "Audiobooki",
+    "music": "Muzyka",
+    "movies": "Filmy",
+    "gamesAndToys": "Gry i zabawki",
+    "papermill": "Papiernik"
+  }
+}

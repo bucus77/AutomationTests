@@ -3,6 +3,8 @@ const helper = require('../helper/helper');
 
 const mainPage = require('../page/mainPage.po');
 
+const commonLiterals = require('../data/Literals/common/commonLiterals.td');
+
 describe('main Page Tests', () => {
     global.testNumber = 'TEST 1';
 
@@ -16,7 +18,7 @@ describe('main Page Tests', () => {
 
     it('should have a title', async () => {
         await expect(await mainPage.validPageTitle(
-            'Księgarnia internetowa swiatksiazki.pl z dostawą 0 zł do Księgarń Świat Książki'
+            commonLiterals.pageTitle
         ))
             .toBe(true, 'page title not valid');
     });

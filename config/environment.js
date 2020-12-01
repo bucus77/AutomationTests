@@ -5,17 +5,10 @@ module.exports = {
     capabilities: {
         'browserName': 'chrome',
         'chromeOptions': {
-            'args': ['show-fps-counter=true','enable-automation'],
-            'loggingPrefs': {
-                'driver': 'WARNING',
-                'browser': 'OFF' // "OFF", "SEVERE", "WARNING", "INFO", "CONFIG", "FINE", "FINER", "FINEST", "ALL".
-            }
-        }
-    },
-    firefoxCapabilities: {
-        'browserName': 'firefox',
-        'moz:firefoxOptions': {
-            'args': ['--safe-mode']
+            'args': [
+                'show-fps-counter=true',
+                '--window-size=1920,1080'
+            ]
         }
     },
     baseUrl: servers.env_production.host1
