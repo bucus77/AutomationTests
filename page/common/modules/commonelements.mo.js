@@ -8,7 +8,7 @@ class CommonElementsMO {
     }
 
     getLeftNavbarLinks() {
-        return $$('.space-base #menu-11-5fc4ebd76da02 .level0 > .menu-link > span')
+        return $$(".space-base [id *='menu-11-5fc'] .level0 > .menu-link > span")
     }
 }
 
