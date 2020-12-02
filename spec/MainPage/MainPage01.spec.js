@@ -22,19 +22,40 @@ describe('Common Tests', () => {
     });
 
 
-    it('main Page Links', async () => {
+    it('TEST 1: main Page Links', async () => {
         global.testNumber = 'TEST 1';
-        await expect(await commonPage.validHeaderLinks(
+        expect(await commonPage.validHeaderLinks(
             Object.values(commonLiterals.headerLinks)
         ))
             .toBe(true, 'header links are not valid');
     });
 
-    it('Left Nav Links', async () => {
+    it('TEST 2: Left Nav Links', async () => {
         global.testNumber = 'TEST 2';
-        await expect(await commonPage.validLeftNavbar(
+        expect(await commonPage.validLeftNavbar(
             Object.values(commonLiterals.leftNavigation)
         ))
             .toBe(true, 'header links are not valid');
+    });
+
+    it('TEST 3: Top navs', async () => {
+        global.testNumber = 'TEST 3';
+        expect(await commonPage.validTopNav(
+            Object.values(commonLiterals.topNavigation)
+        ))
+            .toBe(true, 'header links are not valid');
+    });
+
+    it('TEST 4: Left nav wrappers', async () => {
+        global.testNumber = 'TEST 4';
+        const expected = await Object.values(commonLiterals.nestedMenu);
+        const counters = await expected.length;
+        for (let i = 0; i < counters; i++) {
+            expect(await commonPage.validLeftNavWraper(
+                i,
+                Object.values(expected[i])
+            ))
+                .toBe(true, 'header links are not valid');
+        }
     });
 });
