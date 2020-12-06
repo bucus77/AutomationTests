@@ -58,4 +58,34 @@ describe('Common Tests', () => {
                 .toBe(true, 'header links are not valid');
         }
     });
+
+    it('TEST 5: Text areas', async () => {
+        global.testNumber = 'TEST 5';
+        expect(await commonPage.areDisplayedTextAreas(
+        ))
+            .toBe(true, 'text areas are not displayed');
+
+        expect(await commonPage.validTextAreaHeaders(
+            Object.values(commonLiterals.textArea.headers)
+        ))
+            .toBe(true, 'headers in text area are not valid');
+
+        expect(await commonPage.validTextAreaDescription(
+            Object.values(commonLiterals.textArea.descriptions)
+        ))
+            .toBe(true, 'headers in text area are not valid');
+    });
+
+    it('TEST 6: Footer Box', async () => {
+        global.testNumber = 'TEST 6';
+        expect(await commonPage.validFooterBoxHeaders(
+            Object.values(commonLiterals.footerBoxNames)
+        ))
+            .toBe(true, 'footer box names are not valid');
+
+        expect(await commonPage.validFooterLinks(
+            commonLiterals.footerLinks
+        ))
+            .toBe(true, 'footer box names are not valid');
+    });
 });
