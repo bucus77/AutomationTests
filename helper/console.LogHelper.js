@@ -55,8 +55,19 @@ class consoleLogHelper {
      */
     isElementInListAssertionLog(expected, actual, message) {
         expected.includes(actual) ?
-            console.log(greenFont, `${global.testNumber} | OUTPUT | OUTPUT | EXPECTED: ${message} is in list | ACTUAL: ${actual} | OK`, whiteFont) :
+            console.log(greenFont, `${global.testNumber} | OUTPUT | EXPECTED: ${message} is in list | ACTUAL: ${actual} | OK`, whiteFont) :
             console.log(redFont, `${global.testNumber} | OUTPUT | EXPECTED: ${message} is in list| ACTUAL: ${actual} | FAILED`, whiteFont);
+    }
+
+    /**
+     * Methods inform if expected data are correct if are not correct
+     * @param actual - checked data
+     * @param message - info about expected data
+     */
+    isTrueAssertionLog(actual, message) {
+        actual === true ?
+            console.log(greenFont, `${global.testNumber} | OUTPUT | ELEMENT: ${message} is displayed | OK`, whiteFont) :
+            console.log(redFont, `${global.testNumber} | OUTPUT | ELEMENT: ${message} is displayed| FAILED`, whiteFont);
     }
 }
 

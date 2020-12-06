@@ -244,5 +244,53 @@
       "officeAndSchool":"szkoła i biuro",
       "calendars":"kalendarze"
     }
+  },
+  "textArea": {
+    "headers": {
+      "promotion": "Promocje, rabaty,",
+      "announcements": "Zapowiedzi i nowości",
+      "delivery": "Dostawa 0 zł",
+      "freeShipping": "Bezpłatna wysyłka "
+    },
+    "descriptions": {
+      "promotion": "oferty specjalne",
+      "announcements": "z rabatami do -40%",
+      "delivery": "do sieci księgarń ",
+      "freeShipping": "powyżej 69,99 zł"
+    }
+  },
+  "footerBoxNames": {
+    "swiatKsiazkiPL": "SWIATKSIAZKI.PL",
+    "links": "LINKI",
+    "support": "WSPARCIE",
+    "address": "DANE ADRESOWE"
+  },
+  "footerLinks": {
+    "firstBox": {
+      "contact": "Kontakt",
+      "rules":"Regulamin sklepu",
+      "privacy":"Polityka prywatności",
+      "rebateCodeRegulations":"Regulamin kodów rabatowych"
+    },
+    "secondBox": {
+      "clientPanel": "Panel Klienta",
+      "yourOrders":"Twoje zamówienia",
+      "personalDataProtection":"Ochrona danych osobowych",
+      "revokeConsentToDataProcessing":"Odwołaj zgodę na przetwarzanie danych",
+      "giftCards": "Karty podarunkowe"
+    },
+    "thirdBox": {
+      "help": "Pomoc",
+      "shippingCosts":"Koszty wysyłki",
+      "availabilityOfProducts":"Dostępności produktów",
+      "payments":"Płatności"
+    },
+    "fourthBox": {
+      "address": "ul. Poznańska 91, 05-850 Ożarów Mazowiecki",
+      "tel":"tel.: 22 250 90 90",
+      "mail":"e-mail:bok@swiatksiazki.pl",
+      "workHours":"poniedziałek - piątek godz.: 9:00 - 18:00"
+    }
   }
+
 }
